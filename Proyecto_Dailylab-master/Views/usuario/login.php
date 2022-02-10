@@ -22,7 +22,7 @@ crossorigin="anonymous"></script>
               <input name="Contrasena_Usuario" type="password" placeholder="contrasena" />
             </div>
             <input type="submit"  class="btn solid" /> 
-            <p class="social-text">Siguenos en nuestras redes sociales porfis</p>
+            <p class="social-text">Siguenos en nuestras redes sociales </p>
             <div class="social-media">
               <a href="#" class="social-icon">
                 <i class="fab fa-facebook-f"></i>
