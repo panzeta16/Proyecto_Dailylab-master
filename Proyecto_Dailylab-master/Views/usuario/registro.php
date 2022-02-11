@@ -1,6 +1,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <link rel="stylesheet" href="Views\css\loginyregistro.css">
+<script src="views/js/jquery-3.6.0.min.js"></script>
+<script src="views/js/registro.js"></script>
 <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 <div class="home">
   <div class="container">
@@ -8,7 +10,7 @@
       <div class="signin-signup">
         <!--<form action="?c=usuario&a=validate" method="post"> -->
 
-        <form action="?c=usuario&a=save" id="registro" method="post">
+        <form action="?c=usuario&a=save" id="registro" method="post" name="registro">
           <h2 class="title">Registrate</h2>
 
           <label class="guia" for="Nombres_Usuario">Nombre*</label>
@@ -78,7 +80,9 @@
           <label class="guia" for="Contrasena_Usuario">Contraseña*</label>
           <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input name="Contrasena_Usuario" type="password" id="Contrasena_Usuario" placeholder="contrasena" required />
+            <input name="Contrasena_Usuario" type="password" id="Contrasena_Usuario" placeholder="contrasena" required  />
+
+            <span id="mensaje">  </span>
           </div>
 
           <label class="guia" for="Contrasena_Usuario2">Confirme Contraseña*</label>
@@ -124,4 +128,5 @@
         </div>
       </div>
     </div>
+    
     </form>
